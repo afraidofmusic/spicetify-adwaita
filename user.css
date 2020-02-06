@@ -1,0 +1,65 @@
+/* Change Font */
+* {
+	font-family: "Roboto Condensed";
+}
+
+/*Thinner scrollbar*/
+::-webkit-scrollbar {
+	height: 6px !important;
+	width: 6px !important;
+	background: #fbfafa !important;
+}
+
+::-webkit-scrollbar-track {
+	background: #fbfafa !important;
+}
+
+/*Round corner scrollbar*/
+::-webkit-scrollbar-thumb {
+	border-radius: 0px !important;
+	background: #c4c5c5 !important;
+}
+
+/*Hide top and bottom buttons of scrollbar */
+/*who uses those, lol*/
+::-webkit-scrollbar-button {
+	display: none !important;
+}
+
+/*Hide some annoying elements like profile name and pic, upgrade button and device connect bar at bottom, new playlist button*/
+.upgrade-button,
+.view-player .remote-playback-bar,
+.LeftSidebarNewPlaylistButton__button,
+.NewPlaylistButton {
+	display: none !important;
+}
+
+/*Exclude these elements from draggable property because it stops them from clickable*/
+.profile-items-container,
+.profile {
+	-webkit-app-region: no-drag !important;
+}
+
+.sidebar {
+	border-right: 1px solid #cdc9c3 !important;
+}
+.player-bar-wrapper {
+	border-top: 1px solid #cdc9c3 !important;
+}
+
+.sidebar {
+	--left-sidebar-item-height: 42px !important;
+}
+
+.SidebarListItem--is-active:after,
+.RootlistItem--is-active:after,
+/* For Linux */ #view-navigation-bar .item.active:after {
+	background-color: #e9e9e8 !important;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+}
+
+.SidebarListItem__label {
+	z-index: 3 !important;
+}
